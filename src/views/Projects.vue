@@ -2,79 +2,41 @@
   <div>
     <section class="protfolio">
       <div id="title">
-      <h1>Projects</h1>
-      <p>These are supposed to be sample projects</p>
+        <h1>Projects</h1>
+        <p>Some of my private experiments / projects</p>
       </div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-head">
-                <img
-                  alt="Vue logo"
-                  class="rounded-circle img-custome"
-                  src="https://i.pinimg.com/originals/4a/70/56/4a70563234301578c158dc142384a1c3.png"
-                />
-                <h2>web project</h2>
-              </div>
-              <hr />
-              <div class="card-body">
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                  euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                  eros. Praesent commodo cursus magna.
-                </p>
-                <button type="button" class="btn btn-outline-secondary">
-                  More
-                </button>
-              </div>
-            </div>
-            <br />
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-head">
-                <img
-                  alt="Vue logo"
-                  class="rounded-circle img-custome"
-                  src="https://cdn.mos.cms.futurecdn.net/wH5y2PkWhCxqKBje8rBp5e.jpg"
-                />
-                <h2>web project</h2>
-              </div>
-              <hr />
-              <div class="card-body">
-                <p>
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                  euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                  eros. Praesent commodo cursus magna.
-                </p>
-                <button type="button" class="btn btn-outline-secondary">
-                  More
-                </button>
-              </div>
-            </div>
-          </div>
+          <Project
+            v-for="(project, index) in projectData"
+            :key="index"
+            v-bind="project"
+          ></Project>
         </div>
       </div>
     </section>
   </div>
 </template>
-
+<script>
+import Project from "../components/Projects/Project.vue";
+export default {
+  components: { Project },
+  data() {
+    return {
+      projectData: [
+        {
+          title: "Mandelbrot Set Visualization",
+          description:
+            "Interactive visualization of the mandelbrot set, allowing exploration of arbitrary position / zoom level. Implemented in C++ using STL Framework.",
+          logoPath: "/assets/mandelbrot.png",
+          githubLink: "https://github.com/ckoopmann/mandelbrot",
+        },
+      ],
+    };
+  },
+};
+</script>
 <style lang="css" scoped>
-.protfolio {
-  background-color: #34345238;
-  padding-top: 8%;
-  padding-bottom: 15%;
-  /* padding:15% */
-}
-.img-custome {
-  width: 140px;
-  height: 140px;
-  margin-top: 15px;
-}
-
 #title {
   color: white;
 }
