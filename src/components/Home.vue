@@ -2,13 +2,8 @@
   <div>
     <section class="section">
       <div class="container-fliud">
-        <img
-          alt="Vue logo"
-          class="img-fluid"
-          src="../../public/profile.jpg"
-        />
-        <h1>Software Developer</h1>
-        <p>This is a fun project I built while learning vue.js and bootstrap</p>
+        <h1>Christian Koopmann</h1>
+        <p>This is my personal website.</p>
         <button type="button" class="btn btn-primary btn-lg">
           Contact
         </button>
@@ -22,9 +17,15 @@
   padding-top: 10%;
   padding-bottom: 10%;
 }
+</style>
 
-.img-fluid{
-  max-width: 100%;
-  height: auto;
+<style>
+body {
+  background-image: url("../../assets/background.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 </style>
