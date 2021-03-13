@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Projects from "./views/Projects.vue";
 const router = createRouter({
   history: createWebHistory(),
+  linkActiveClass: "active",
   routes: [
     {
       path: "/",

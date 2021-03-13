@@ -16,12 +16,12 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <router-link class="nav-link" to="/home">
+            <router-link class="nav-link" to="/home" exact>
               Home
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/projects">
+            <router-link class="nav-link" to="/projects" exact>
               Projects
             </router-link>
           </li>
@@ -32,10 +32,11 @@
 </template>
 
 <style scoped>
- nav li:hover,
- nav li.router-link-active,
- nav li.router-link-exact-active {
-   background-color: indianred;
+ nav li:hover{
    cursor: pointer;
+   font-weight: bold;
+ }
+ .active {
+   text-decoration: underline;
  }
 </style>
