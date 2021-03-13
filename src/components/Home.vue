@@ -4,13 +4,27 @@
       <div class="container-fliud">
         <h1>Christian Koopmann</h1>
         <p>This is my personal website.</p>
-        <button type="button" class="btn btn-primary btn-lg">
+        <a
+          type="button"
+          class="btn btn-primary btn-lg"
+          :href="`mailto:${email}`"
+        >
           Contact
-        </button>
+        </a>
       </div>
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: "c.k.e.koopmann@gmail.com",
+    };
+  },
+};
+</script>
 
 <style lang="css" scoped>
 .section {
@@ -20,8 +34,8 @@
 </style>
 
 <style>
-body { 
-  background: url(../../assets/background.jpg) no-repeat center center fixed; 
+body {
+  background: url(../../assets/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
