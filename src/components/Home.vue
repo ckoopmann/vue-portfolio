@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="section">
-      <div class="container-fliud">
+      <div class="container-fluid">
         <h1>Christian Koopmann</h1>
         <p>This is my personal website.</p>
         <a
@@ -30,15 +30,8 @@ export default {
 .section {
   padding-top: 10%;
   padding-bottom: 10%;
+  color: white;
+
 }
 </style>
 
-<style>
-body {
-  background: url(../../assets/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-</style>

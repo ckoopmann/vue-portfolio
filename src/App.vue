@@ -22,4 +22,11 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+body {
+  background: url(../assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 </style>
