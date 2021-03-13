@@ -20,12 +20,11 @@
 </style>
 
 <style>
-body {
-  background-image: url("../../assets/background.jpg");
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+body { 
+  background: url(../../assets/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>
