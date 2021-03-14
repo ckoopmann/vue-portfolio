@@ -32,11 +32,11 @@
 </template>
 
 <style scoped>
- nav li:hover{
-   cursor: pointer;
-   font-weight: bold;
- }
- .active {
-   text-decoration: underline;
- }
+nav li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.active {
+  text-decoration: underline;
+}
 </style>

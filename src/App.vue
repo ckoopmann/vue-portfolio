@@ -1,23 +1,17 @@
 <template>
   <Navigation />
-  <div>
-    <LeftArrow />
-    <router-view />
-    <RightArrow />
-  </div>
+  <Body/>
 </template>
 
 <script>
 import Navigation from "./components/Navigation.vue";
-import LeftArrow from "./components/LeftArrow.vue";
-import RightArrow from "./components/RightArrow.vue";
+import Body from "./components/Body.vue";
 
 export default {
   name: "App",
   components: {
     Navigation,
-    LeftArrow,
-    RightArrow,
+    Body,
   },
 };
 </script>
@@ -37,4 +31,5 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
 </style>
