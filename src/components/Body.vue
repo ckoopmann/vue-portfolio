@@ -56,6 +56,18 @@ export default {
       this.$router.push(this.previousView);
     },
   },
+  created() {
+    window.addEventListener("keydown", (e) => {
+      if (e.key =="ArrowLeft") {
+          e.preventDefault();
+          this.previous();
+      }
+      else if (e.key =="ArrowRight") {
+          e.preventDefault();
+          this.next();
+      }
+    });
+  },
 };
 </script>
 
@@ -98,7 +110,6 @@ button {
   position: absolute;
   left: 0;
 }
-
 
 .slide_previous-enter-active,
 .slide_previous-leave-active {
