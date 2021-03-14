@@ -1,19 +1,17 @@
 <template>
-  <div class="row align-items-center ">
+  <div class="row">
     <div class="col">
-      <div id="carouselExampleControls" class="carousel slide">
-        <div class="carousel-inner">
-          <router-view />
-        </div>
-        <router-link class="carousel-control-prev" :to="previousView">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </router-link>
-        <router-link class="carousel-control-next" :to="nextView">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </router-link>
-      </div>
+      <router-view v-slot="{ Component }">
+        <transition name="slide">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+      <router-link class="carousel-control-prev" :to="previousView">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </router-link>
+      <router-link class="carousel-control-next" :to="nextView">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </router-link>
     </div>
   </div>
 </template>
@@ -24,6 +22,35 @@
   width: 100%;
   position: absolute;
   margin: 0px;
+  vertical-align: middle;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  vertical-align: middle;
+  position: absolute;
+  width: inherit;
+  transition: all 0.75s ease-out;
+}
+
+.slide-enter-to {
+  position: absolute;
+  right: 0;
+}
+
+.slide-enter-from {
+  position: absolute;
+  right: -100%;
+}
+
+.slide-leave-to {
+  position: absolute;
+  left: -100%;
+}
+
+.slide-leave-from {
+  position: absolute;
+  left: 0;
 }
 </style>
 
