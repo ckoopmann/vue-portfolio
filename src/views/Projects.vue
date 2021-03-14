@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="protfolio">
-      <div id="title">
+      <div id="title" class="mt-4 mb-4">
         <h1>Projects</h1>
         <p>Some of my private experiments / projects</p>
       </div>
