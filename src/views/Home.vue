@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="align-self-center">
     <section class="section">
       <div class="container-fluid">
         <h1>Christian Koopmann</h1>
