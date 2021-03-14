@@ -31,6 +31,13 @@ export default {
           logoPath: "/assets/mandelbrot.png",
           githubLink: "https://github.com/ckoopmann/mandelbrot",
         },
+        {
+          title: "Portfolio Website",
+          description:
+            "Implementation of this website using the Vue.js framework.",
+          logoPath: "/favicon.ico",
+          githubLink: "https://github.com/ckoopmann/vue-portfolio",
+        },
       ],
     };
   },
@@ -40,4 +47,5 @@ export default {
 #title {
   color: white;
 }
+
 </style>
