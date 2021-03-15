@@ -86,7 +86,6 @@ button {
 
 .slide_next-enter-active,
 .slide_next-leave-active {
-  position: absolute;
   width: inherit;
   transition: all 0.75s ease-out;
 }

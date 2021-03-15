@@ -8,9 +8,7 @@
       <hr />
       <div class="card-body">
         <p>{{ description }}</p>
-        <a type="button" class="btn btn-outline-secondary" :href="githubLink">
-          <img :src="githubIconPath" />
-        </a>
+        <slot> </slot>
       </div>
     </div>
     <br />
@@ -19,12 +17,7 @@
 
 <script>
 export default {
-  props: ["title", "logoPath", "description", "githubLink"],
-  data() {
-    return {
-      githubIconPath: "/assets/GitHub-Mark-32px.png",
-    };
-  },
+  props: ["title", "logoPath", "description"],
 };
 </script>
 

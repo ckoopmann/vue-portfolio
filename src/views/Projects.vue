@@ -7,22 +7,31 @@
       </div>
       <div class="container">
         <div class="row justify-content-center">
-          <Project
+          <BaseCard
             v-for="(project, index) in projectData"
             :key="index"
             v-bind="project"
-          ></Project>
+          >
+            <a
+              type="button"
+              class="btn btn-outline-secondary"
+              :href="project.githubLink"
+            >
+              <img :src="githubIconPath" />
+            </a>
+          </BaseCard>
         </div>
       </div>
     </section>
   </div>
 </template>
 <script>
-import Project from "../components/Projects/Project.vue";
+import BaseCard from "../components/BaseCard.vue";
 export default {
-  components: { Project },
+  components: { BaseCard },
   data() {
     return {
+      githubIconPath: "/assets/GitHub-Mark-32px.png",
       projectData: [
         {
           title: "Mandelbrot Set Visualization",
@@ -47,5 +56,4 @@ export default {
 #title {
   color: white;
 }
-
 </style>
