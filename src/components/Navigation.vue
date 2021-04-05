@@ -15,10 +15,10 @@
       <a class="navbar-brand" href="#">CK</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li data-menuanchor="page1" class="active">
-            <a href="#page1">Section 1</a>
+          <li data-menuanchor="home" class="nav-item active">
+            <a href="#home" class="nav-link">Section 1</a>
           </li>
-          <li data-menuanchor="page2"><a href="#page2">Section 2</a></li>
+          <li data-menuanchor="projects" class="nav-item"><a href="#projects" class="nav-link">Section 2</a></li>
         </ul>
       </div>
     </nav>
@@ -27,7 +27,6 @@
 
 <style scoped>
 nav {
-  position: fixed;
   z-index: 50;
 }
 nav li:hover {

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="mt-4 mb-4">
+      <div id="title" class="mt-4 mb-4">
         <h1>Projects</h1>
         <p>Some of my private experiments / projects</p>
       </div>

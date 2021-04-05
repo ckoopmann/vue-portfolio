@@ -3,10 +3,10 @@
     <Navigation/>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
-        <Projects />
+        <Home />
       </div>
       <div class="section">
-        <Home />
+        <Projects />
       </div>
     </full-page>
   </div>
@@ -26,11 +26,27 @@ export default {
         scrollOverflow: false,
         scrollBar: false,
         menu: "#menu",
-        anchors: ["page1", "page2"],
-        sectionsColor: ["#41b883", "#ff5f45"],
+        anchors: ["home", "projects"],
       },
     };
   },
 };
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body {
+  background: url(/assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
 
