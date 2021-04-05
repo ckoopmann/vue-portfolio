@@ -1,7 +1,6 @@
 <template>
   <div>
-    <section class="protfolio mt-4">
-      <div id="title" class="mt-4 mb-4">
+      <div class="mt-4 mb-4">
         <h1>Projects</h1>
         <p>Some of my private experiments / projects</p>
       </div>
@@ -22,7 +21,6 @@
           </BaseCard>
         </div>
       </div>
-    </section>
   </div>
 </template>
 <script>
@@ -52,8 +50,3 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
-#title {
-  color: white;
-}
-</style>

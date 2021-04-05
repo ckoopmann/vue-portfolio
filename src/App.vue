@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <Navigation />
-    <full-page :options="options" id="fullpage">
-      <div class="section">
-        <Home />
-      </div>
+    <Navigation/>
+    <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <Projects />
+      </div>
+      <div class="section">
+        <Home />
       </div>
     </full-page>
   </div>
@@ -17,13 +17,13 @@ import Home from "./views/Home";
 import Projects from "./views/Projects";
 import Navigation from "./components/Navigation";
 export default {
-  name: "App",
+  name: "app",
   components: { Home, Projects, Navigation },
   data() {
     return {
       options: {
         licenseKey: "YOUR_KEY_HERE",
-        scrollOverflow: true,
+        scrollOverflow: false,
         scrollBar: false,
         menu: "#menu",
         anchors: ["page1", "page2"],
@@ -33,3 +33,4 @@ export default {
   },
 };
 </script>
+

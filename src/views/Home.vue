@@ -1,5 +1,5 @@
 <template>
-  <div class="align-self-center">
+  <div id="home" class="align-self-center">
         <h1>Christian Koopmann</h1>
         <p>This is my personal website.</p>
         <a
@@ -21,3 +21,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#home {
+  margin: 50px;
+}
+</style>
+
+
