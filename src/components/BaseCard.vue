@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-8">
+  <div class="slide col-md-12">
     <div class="card">
       <div class="card-head">
         <img class="rounded-circle img-custome" :src="logoPath" />

@@ -19,3 +19,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h1, p {
+  color: white;
+}
+</style>

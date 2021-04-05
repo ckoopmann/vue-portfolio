@@ -27,6 +27,8 @@ export default {
         scrollBar: false,
         menu: "#menu",
         anchors: ["home", "projects"],
+        slidesNavigation: true,
+        slidesNavPosition: "bottom",
       },
     };
   },
@@ -47,5 +49,13 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.fp-slidesNav.fp-bottom {
+  bottom: 100px;
+  color: red;
+}
+.fp-slidesNav.fp-bottom ul li a span{
+     background: white;
 }
 </style>
