@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navigation/>
+    <Navigation />
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <Home />
@@ -49,4 +49,3 @@ body {
   background-size: cover;
 }
 </style>
-

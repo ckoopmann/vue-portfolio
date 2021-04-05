@@ -16,9 +16,9 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li data-menuanchor="home" class="nav-item active">
-            <a href="#home" class="nav-link">Section 1</a>
+            <a href="#home" class="nav-link">Home</a>
           </li>
-          <li data-menuanchor="projects" class="nav-item"><a href="#projects" class="nav-link">Section 2</a></li>
+          <li data-menuanchor="projects" class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
         </ul>
       </div>
     </nav>
