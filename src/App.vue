@@ -2,25 +2,27 @@
   <div>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
-        First section ...
+        <Home />
       </div>
       <div class="section">
-        Second section ...
+        <Projects />
       </div>
     </full-page>
   </div>
 </template>
 
 <script>
-
+import Home from "./views/Home";
+import Projects from "./views/Projects";
 export default {
   name: "App",
+  components: { Home, Projects },
   data() {
     return {
       options: {
         licenseKey: "YOUR_KEY_HEERE",
         menu: "#menu",
-        anchors: ["page1", "page2", "page3"],
+        anchors: ["home", "projects", "page3"],
         sectionsColor: ["#41b883", "#ff5f45", "#0798ec"],
       },
     };
