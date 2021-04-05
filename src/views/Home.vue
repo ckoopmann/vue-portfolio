@@ -1,7 +1,5 @@
 <template>
   <div class="align-self-center">
-    <section class="section">
-      <div class="container-fluid">
         <h1>Christian Koopmann</h1>
         <p>This is my personal website.</p>
         <a
@@ -11,8 +9,6 @@
         >
           Contact
         </a>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -25,13 +21,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css" scoped>
-.section {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  color: white;
-
-}
-</style>
-

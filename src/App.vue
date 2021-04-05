@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <full-page ref="fullpage" :options="options" id="fullpage">
+  <div id="app">
+    <Navigation />
+    <full-page :options="options" id="fullpage">
       <div class="section">
         <Home />
       </div>
@@ -14,16 +15,19 @@
 <script>
 import Home from "./views/Home";
 import Projects from "./views/Projects";
+import Navigation from "./components/Navigation";
 export default {
   name: "App",
-  components: { Home, Projects },
+  components: { Home, Projects, Navigation },
   data() {
     return {
       options: {
-        licenseKey: "YOUR_KEY_HEERE",
+        licenseKey: "YOUR_KEY_HERE",
+        scrollOverflow: true,
+        scrollBar: false,
         menu: "#menu",
-        anchors: ["home", "projects", "page3"],
-        sectionsColor: ["#41b883", "#ff5f45", "#0798ec"],
+        anchors: ["page1", "page2"],
+        sectionsColor: ["#41b883", "#ff5f45"],
       },
     };
   },
