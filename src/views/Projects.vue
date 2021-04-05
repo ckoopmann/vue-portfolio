@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div id="title" class="mt-4 mb-4">
-      <h1>Projects</h1>
-      <p>Some of my private experiments / projects</p>
-    </div>
     <div class="container">
       <div class="row justify-content-center">
+        <div id="title" class="slide">
+          <h1>Projects</h1>
+          <p>Some of my private experiments / projects</p>
+        </div>
         <BaseCard
           v-for="(project, index) in projectData"
           :key="index"
