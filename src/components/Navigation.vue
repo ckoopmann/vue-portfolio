@@ -18,6 +18,7 @@
           <li data-menuanchor="home" class="nav-item active">
             <a href="#home" class="nav-link">Home</a>
           </li>
+          <li data-menuanchor="work" class="nav-item"><a href="#work" class="nav-link">Work</a></li>
           <li data-menuanchor="projects" class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
         </ul>
       </div>

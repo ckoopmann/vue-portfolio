@@ -7,7 +7,7 @@
       </div>
       <hr />
       <div class="card-body">
-        <p>{{ description }}</p>
+        <p class="lead">{{ description }}</p>
         <slot> </slot>
       </div>
     </div>

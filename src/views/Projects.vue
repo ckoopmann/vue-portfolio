@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div id="title" class="slide">
           <h1>Projects</h1>
-          <p>Some of my private experiments / projects</p>
+          <p class="lead">Some of my private experiments / projects</p>
         </div>
         <BaseCard
           v-for="(project, index) in projectData"

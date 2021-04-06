@@ -5,6 +5,9 @@
       <div class="section" id="homeSection">
         <Home />
       </div>
+      <div class="section" id="workSection">
+        <Projects />
+      </div>
       <div class="section" id="projectsSection">
         <Projects />
       </div>
@@ -26,7 +29,7 @@ export default {
         scrollOverflow: false,
         scrollBar: false,
         menu: "#menu",
-        anchors: ["home", "projects"],
+        anchors: ["home", "work", "projects"],
         slidesNavigation: true,
         slidesNavPosition: "bottom",
         loopHorizontal: false,
@@ -59,6 +62,14 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+#workSection {
+  background-image: url(/assets/work.jpg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 .fp-slidesNav.fp-bottom {
   bottom: 100px;
