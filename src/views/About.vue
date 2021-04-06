@@ -15,6 +15,13 @@
       <a type="button" class="btn btn-primary btn-lg ml-1" :href="github">
         <i class="fab fa-github fa-lg"></i>
       </a>
+      <a
+        type="button"
+        class="btn btn-primary btn-lg ml-1"
+        :href="stackoverflow"
+      >
+        <i class="fab fa-stack-overflow fa-lg"></i>
+      </a>
     </div>
   </div>
 </template>
@@ -26,6 +33,7 @@ export default {
       email: "c.k.e.koopmann@gmail.com",
       linkedin: "https://www.linkedin.com/in/christian-koopmann-a97ab55b/",
       github: "https://github.com/ckoopmann",
+      stackoverflow: "https://stackoverflow.com/users/5780239/chris",
     };
   },
 };
