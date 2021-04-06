@@ -26,13 +26,13 @@ export default {
     return {
       workData: [
         {
-          title: "Backend Software Engineer",
+          title: "Software Engineer",
           employer: "envelio GmbH",
           timeframe: "April 2020 - Today",
           link: "https://envelio.de/en/",
           responsibilities: [
             "Development of SaaS platform for electricity grid operators",
-            "Backend Development using Django / Flask",
+            "Full-Stack implementation of new Features / improvement of existing ones",
             "Integration of third-party APIs (e.g. Charging Point Operators)",
             "Development of new microservices including CI-Pipeline",
             "Improvement and extension of Testing / QA-Framework",
