@@ -6,7 +6,7 @@
         <About />
       </div>
       <div class="section" id="workSection">
-        <Projects />
+        <Work />
       </div>
       <div class="section" id="projectsSection">
         <Projects />
@@ -18,10 +18,15 @@
 <script>
 import About from "./views/About";
 import Projects from "./views/Projects";
+import Work from "./views/Work";
 import Navigation from "./components/Navigation";
 export default {
   name: "app",
-  components: { About, Projects, Navigation },
+  components: { 
+      About, 
+      Projects, 
+      Work, 
+      Navigation },
   data() {
     return {
       options: {
