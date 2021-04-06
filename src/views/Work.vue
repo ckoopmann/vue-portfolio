@@ -5,7 +5,7 @@
         <div id="title" class="slide">
           <h1 class="display-3">Work Experience</h1>
           <p class="lead" id="summary">
-            A summary of my most recent work experience
+            Swipe right to read about my professional journey.
           </p>
         </div>
         <BaseWorkElement

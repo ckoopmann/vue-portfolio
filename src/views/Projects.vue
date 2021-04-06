@@ -3,46 +3,38 @@
     <div class="container">
       <div class="row justify-content-center">
         <div id="title" class="slide">
-          <h1>Projects</h1>
-          <p class="lead">Some of my private experiments / projects</p>
+          <h1 class="display-3">Projects</h1>
+          <p class="lead" id="summary">
+            Swipe right to read about my personal projects.
+          </p>
         </div>
-        <BaseCard
+        <BaseProjectElement
           v-for="(project, index) in projectData"
           :key="index"
           v-bind="project"
         >
-          <a
-            type="button"
-            class="btn btn-outline-secondary"
-            :href="project.githubLink"
-          >
-            <img :src="githubIconPath" />
-          </a>
-        </BaseCard>
+        </BaseProjectElement>
       </div>
     </div>
   </div>
 </template>
 <script>
-import BaseCard from "../components/BaseCard.vue";
+import BaseProjectElement from "../components/BaseProjectElement.vue";
 export default {
-  components: { BaseCard },
+  components: { BaseProjectElement },
   data() {
     return {
-      githubIconPath: "/assets/GitHub-Mark-32px.png",
       projectData: [
         {
-          title: "Mandelbrot Set Visualization",
-          description:
-            "Interactive visualization of the mandelbrot set, allowing exploration of arbitrary position / zoom level. Implemented in C++ using STL Framework.",
-          logoPath: "/assets/mandelbrot.png",
-          githubLink: "https://github.com/ckoopmann/mandelbrot",
-        },
-        {
-          title: "Portfolio Website",
-          description:
+          title: "Personal Website",
+          summary: [
             "Implementation of this website using the Vue.js framework.",
-          logoPath: "/favicon.ico",
+          ],
+          technologies: [
+            "Javascript (Vue.js)",
+            "HTML",
+            "CSS (Bootstrap)",
+          ],
           githubLink: "https://github.com/ckoopmann/vue-portfolio",
         },
       ],
@@ -53,7 +45,11 @@ export default {
 
 <style scoped>
 h1,
-p {
+#summary {
   color: white;
+}
+
+#summary {
+  font-size: 2rem;
 }
 </style>
