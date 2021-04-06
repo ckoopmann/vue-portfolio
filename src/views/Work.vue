@@ -24,13 +24,10 @@ export default {
   components: { BaseWorkElement },
   data() {
     return {
-      githubIconPath: "/assets/GitHub-Mark-32px.png",
       workData: [
         {
           title: "Backend Software Engineer",
           employer: "envelio GmbH",
-          description:
-            "Development of backend microservices for startup in the energy sector",
           timeframe: "April 2020 - Today",
           link: "https://envelio.de/en/",
           responsibilities: [
@@ -47,6 +44,62 @@ export default {
             "Test-Frameworks (Pytest, Jest)",
             "Docker",
           ],
+        },
+        {
+          title: "Data Scientist / Software Engineer",
+          employer: "Athion GmbH (defunct)",
+          timeframe: "Sept. 2019 - Mar. 2020",
+          link: "https://www.crunchbase.com/organization/athion",
+          responsibilities: [
+            "Development of SaaS platform managing / optimizing very complex energy systems.",
+            "Backend Development in a Microservice Architecture",
+            "Development of ML-models for time series prediction from ideation to deployment",
+            "Integration of third-party APIs (e.g. Market Data from European Energy Exchange)",
+          ],
+          technologies: [
+            "Python (pandas, sklearn, scikit, nameko)",
+            "CI-Tools (Gitlab-CI)",
+            "Test-Frameworks (Pytest)",
+          ],
+        },
+        {
+          title: "Quantitative Analyst",
+          employer: "Tipico Inc.",
+          timeframe: "July 2018 - August 2019",
+          link: "https://www.tipico-careers.com/en/",
+          responsibilities: [
+            "Developing quantitative methods and applications in the Bookmaking department",
+            "Working on Projects including trading algorithms and risk management tools",
+            "Development of dashboards illustrating KPIs regarding profitability / risk in different markets / sports",
+          ],
+          technologies: [
+            "R (data.table, ggplot, shiny etc.)",
+            "SQL (Postgres)",
+            "Docker",
+          ],
+        },
+        {
+          title: "Analytics Associate",
+          employer: "Boston Consulting Group",
+          timeframe: "February 2018 - June 2018",
+          link: "https://www.bcg.com/beyond-consulting/bcg-gamma/default",
+          responsibilities: [
+            "Working on data science projects in the specialized BCG Gamma business unit",
+            "Implementation of a large scale data science / digitalisation project in the telecommunications sector",
+          ],
+          technologies: ["R", "Python", "SQL"],
+        },
+        {
+          title: "Master Thesis Student",
+          employer: "BASF AG",
+          timeframe: "June 2017 - Nov. 2017",
+          link: "https://www.basf.com/global/en/careers.html",
+          responsibilities: [
+            "Developing / Documenting various models to predict natural gas prices on the futures market",
+            "Integration of third party data sources (e.g. Refinitiv)",
+            "Evaluation of results including derivation of a trading strategy from probabilistic model forecasts",
+          ],
+          technologies: ["R", "Python", "SQL"],
         },
       ],
     };

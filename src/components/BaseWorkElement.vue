@@ -4,7 +4,8 @@
     <div class="card">
       <div class="card-head mt-3">
         <h4>
-          <a :href="link">{{ employer }} </a>
+          <a v-if="link" :href="link">{{ employer }} </a>
+          <span v-else>{{ employer }}</span>
         </h4>
         <h4 id="timeframe">{{ timeframe }}</h4>
       </div>
