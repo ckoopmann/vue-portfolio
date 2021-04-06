@@ -43,11 +43,20 @@ export default {
           githubLink: "https://github.com/ckoopmann/mandelbrot",
         },
         {
+          title: "Natural Gas Price Prediction",
+          summary: [
+            "Masterthesis on using LSTM Neural Networks to predict natural gas prices",
+            "Includes Thesis itself and all data / code used to create it",
+          ],
+          technologies: ["Python (Keras, Tensorflos)", "R (ggplot2)", "LATEX"],
+          githubLink: "https://github.com/ckoopmann/GasPricePrediction",
+        },
+        {
           title: "ToDo-API",
           summary: [
             "Simple Rest API to save / retrieve Todos",
-              "Implemented as Microservice in the Nameko-Framework",
-              "Done as take-home assignment in previous application process",
+            "Implemented as Microservice in the Nameko-Framework",
+            "Done as take-home assignment in previous application process",
           ],
           technologies: ["Python (nameko)", "RabbitMQ", "Docker"],
           githubLink: "https://github.com/ckoopmann/toDoAPI",
