@@ -30,12 +30,45 @@ export default {
           summary: [
             "Implementation of this website using the Vue.js framework.",
           ],
-          technologies: [
-            "Javascript (Vue.js)",
-            "HTML",
-            "CSS (Bootstrap)",
-          ],
+          technologies: ["Javascript (Vue.js)", "HTML", "CSS (Bootstrap)"],
           githubLink: "https://github.com/ckoopmann/vue-portfolio",
+        },
+        {
+          title: "Mandelbrot Set Visualization",
+          summary: [
+            "Interactive Visualization of the Mandelbrot set allowing to explore its topology at arbitrary position / zoom level",
+            "Done as capstone project of the <a href='https://graduation.udacity.com/confirm/XNSCGCZA'>Udacity C++ Nanodegree Program</a>",
+          ],
+          technologies: ["C++", "make, CMake"],
+          githubLink: "https://github.com/ckoopmann/mandelbrot",
+        },
+        {
+          title: "ToDo-API",
+          summary: [
+            "Simple Rest API to save / retrieve Todos",
+              "Implemented as Microservice in the Nameko-Framework",
+              "Done as take-home assignment in previous application process",
+          ],
+          technologies: ["Python (nameko)", "RabbitMQ", "Docker"],
+          githubLink: "https://github.com/ckoopmann/toDoAPI",
+        },
+        {
+          title: "Django Survey Tool",
+          summary: [
+            "Web tool designed to allow the user to conduct surveys, inspired by the Doodle application",
+            "Done as capstone project of the <a href='https://courses.edx.org/certificates/979ec07e12db407d922c0b9c6335266c'>edX CS50 Web Development</a> Online Course",
+          ],
+          technologies: ["Python (Django)", "HTML", "CSS"],
+          githubLink: "https://github.com/ckoopmann/cs50w_finalproject",
+        },
+        {
+          title: "Earthquake Data-Visualization",
+          summary: [
+            "R-Package visualizing Earthquake data on a map",
+            "Done as capstone project of the <a href='https://www.coursera.org/account/accomplishments/specialization/Y7R2ZZLVXTK9'>Mastering Software Development in R</a> Online Course",
+          ],
+          technologies: ["R (ggplot2)", "Travis-CI"],
+          githubLink: "https://github.com/ckoopmann/EQVisualisation",
         },
       ],
     };

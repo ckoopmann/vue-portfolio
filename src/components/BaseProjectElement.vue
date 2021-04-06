@@ -11,9 +11,8 @@
                 v-for="(summaryBullet, index) in summary"
                 :key="index"
                 class="mb-1"
-              >
-                {{ summaryBullet }}
-              </li>
+                v-html="summaryBullet"
+              ></li>
             </ul>
           </div>
           <div class="col-sm-6 justify-content-center" id="technologies">
@@ -25,7 +24,11 @@
             </ul>
           </div>
         </div>
-        <a type="button" class="btn btn-secondary btn-lg ml-1" :href="githubLink">
+        <a
+          type="button"
+          class="btn btn-secondary btn-lg ml-1"
+          :href="githubLink"
+        >
           <i class="fab fa-github fa-lg"></i>
         </a>
       </div>
