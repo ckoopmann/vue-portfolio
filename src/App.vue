@@ -2,8 +2,8 @@
   <div id="app">
     <Navigation />
     <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section" id="homeSection">
-        <Home />
+      <div class="section" id="aboutSection">
+        <About />
       </div>
       <div class="section" id="workSection">
         <Projects />
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import Home from "./views/Home";
+import About from "./views/About";
 import Projects from "./views/Projects";
 import Navigation from "./components/Navigation";
 export default {
   name: "app",
-  components: { Home, Projects, Navigation },
+  components: { About, Projects, Navigation },
   data() {
     return {
       options: {
@@ -29,7 +29,7 @@ export default {
         scrollOverflow: false,
         scrollBar: false,
         menu: "#menu",
-        anchors: ["home", "work", "projects"],
+        anchors: ["about", "work", "projects"],
         slidesNavigation: true,
         slidesNavPosition: "bottom",
         loopHorizontal: false,
@@ -49,8 +49,8 @@ export default {
   color: #2c3e50;
 }
 
-#homeSection {
-  background-image: url(/assets/home.jpg);
+#aboutSection {
+  background-image: url(/assets/about.jpg);
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;

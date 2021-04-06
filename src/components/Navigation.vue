@@ -15,8 +15,8 @@
       <a class="navbar-brand" href="#">CK</a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul id="menu" class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li data-menuanchor="home" class="nav-item active">
-            <a href="#home" class="nav-link">Home</a>
+          <li data-menuanchor="about" class="nav-item active">
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li data-menuanchor="work" class="nav-item"><a href="#work" class="nav-link">Work</a></li>
           <li data-menuanchor="projects" class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
