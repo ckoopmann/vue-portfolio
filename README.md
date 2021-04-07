@@ -1,5 +1,7 @@
 # vue-portfolio
 
+This is the source code for my personal portfolio website.
+
 ## Project setup
 ```
 npm install
