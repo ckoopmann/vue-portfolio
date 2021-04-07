@@ -22,15 +22,18 @@ import Work from "./views/Work";
 import Navigation from "./components/Navigation";
 export default {
   name: "app",
-  components: { 
-      About, 
-      Projects, 
-      Work, 
-      Navigation },
+  metaInfo: {
+    title: "Christian Koopmann",
+  },
+  components: {
+    About,
+    Projects,
+    Work,
+    Navigation,
+  },
   data() {
     return {
       options: {
-        licenseKey: "YOUR_KEY_HERE",
         scrollOverflow: false,
         scrollBar: false,
         menu: "#menu",
@@ -74,7 +77,6 @@ export default {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
 
 .fp-slidesNav.fp-bottom {
   bottom: 100px;
