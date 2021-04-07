@@ -45,10 +45,6 @@ p {
   color: white;
 }
 
-p {
-  font-size: 2rem;
-}
-
 #logo {
   background-color: white;
 }

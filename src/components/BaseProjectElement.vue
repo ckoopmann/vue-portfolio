@@ -1,7 +1,7 @@
 <template>
   <div class="slide">
-    <h2 class="display-4 mb-3">{{ title }}</h2>
-    <div class="card">
+    <h2 class="display-4 mb-1 mt-1">{{ title }}</h2>
+    <div class="card ml-2">
       <div class="card-body">
         <div class="row">
           <div class="col-sm-6 justify-content-center">
@@ -49,5 +49,9 @@ h2 {
 }
 #timeframe {
   font-style: italic;
+}
+
+.card {
+  max-height: 100vh;
 }
 </style>

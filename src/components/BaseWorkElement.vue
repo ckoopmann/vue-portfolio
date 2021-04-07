@@ -1,7 +1,7 @@
 <template>
   <div class="slide">
-    <h2 class="display-4 mb-3">{{ title }}</h2>
-    <div class="card">
+    <h2 class="display-4 mb-1 mt-1">{{ title }}</h2>
+    <div class="card ml-1 mr-1">
       <div class="card-head mt-3">
         <h4>
           <a v-if="link" :href="link">{{ employer }} </a>
@@ -56,6 +56,7 @@ export default {
 h2 {
   color: white;
 }
+
 #timeframe {
   font-style: italic;
 }

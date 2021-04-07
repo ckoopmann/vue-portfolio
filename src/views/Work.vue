@@ -106,14 +106,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-h1,
-#summary {
-  color: white;
-}
-
-#summary {
-  font-size: 2rem;
-}
-</style>

@@ -36,7 +36,7 @@ export default {
         {
           title: "Mandelbrot Set Visualization",
           summary: [
-            "Interactive Visualization of the Mandelbrot set allowing to explore its topology at arbitrary position / zoom level",
+            "Interactive Visualization of the Mandelbrot Set to explore its topology at arbitrary position / zoom level",
             "Done as capstone project of the <a href='https://graduation.udacity.com/confirm/XNSCGCZA'>Udacity C++ Nanodegree Program</a>",
           ],
           technologies: ["C++", "make, CMake"],

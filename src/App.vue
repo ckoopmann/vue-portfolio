@@ -38,8 +38,6 @@ export default {
         scrollBar: false,
         menu: "#menu",
         anchors: ["about", "work", "projects"],
-        slidesNavigation: true,
-        slidesNavPosition: "bottom",
         loopHorizontal: false,
         resetSliders: true,
       },
@@ -79,10 +77,54 @@ export default {
 }
 
 .fp-slidesNav.fp-bottom {
-  bottom: 100px;
-  color: red;
+  bottom: 50px;
+  opacity: 0.8;
 }
-.fp-slidesNav.fp-bottom ul li a span {
-  background: white;
+.fp-slidesNav {
+  z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .fp-controlArrow {
+    visibility: hidden;
+  }
+}
+
+h1 {
+  font-size: 5vh !important;
+  color: white;
+}
+p {
+  font-size: 2vh !important;
+  color: white;
+}
+
+h2 {
+  font-size: 4vh !important;
+}
+
+h4 {
+  font-size: 2.5vh !important;
+}
+
+h5 {
+  font-size: 2.5vh !important;
+}
+
+.fp-controlArrow.fp-next {
+  opacity: 0.8;
+  z-index: 0;
+}
+.fp-controlArrow.fp-prev {
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.card {
+  max-height: 80vh;
+}
+
+.card-body {
+  overflow-y: auto;
 }
 </style>
