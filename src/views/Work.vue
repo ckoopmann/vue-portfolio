@@ -54,7 +54,7 @@ export default {
             "Development of SaaS platform managing / optimizing very complex energy systems.",
             "Backend Development in a Microservice Architecture",
             "Development of ML-models for time series prediction from ideation to deployment",
-            "Integration of third-party APIs (e.g. Market Data from European Energy Exchange)",
+            "Integration of third-party APIs (e.g. market data from the European Energy Exchange)",
           ],
           technologies: [
             "Python (pandas, sklearn, scikit, nameko)",
@@ -95,7 +95,7 @@ export default {
           timeframe: "June 2017 - Nov. 2017",
           link: "https://www.basf.com/global/en/careers.html",
           responsibilities: [
-            "Developing / Documenting various models to predict natural gas prices on the futures market",
+            "Developing / documenting various models to predict natural gas prices on the futures market",
             "Integration of third party data sources (e.g. Refinitiv)",
             "Evaluation of results including derivation of a trading strategy from probabilistic model forecasts",
           ],
