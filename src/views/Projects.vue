@@ -30,8 +30,14 @@ export default {
           summary: [
             "Web3 implementation of the classic game Rock Paper Scissors, including ethereum smart contracts and vue frontend",
           ],
-          technologies: ["Ethereum (solidity, web3.js, truffle)", "Javascript (Vue.js)", "HTML", "CSS (Bootstrap)"],
+          technologies: [
+            "Ethereum (solidity, web3.js, truffle)",
+            "Javascript (Vue.js)",
+            "HTML",
+            "CSS (Bootstrap)",
+          ],
           githubLink: "https://github.com/ckoopmann/BlockPaperScissors",
+          deploymentLink: "https://block-paper-scissors.com",
         },
         {
           title: "Personal Website",

@@ -31,6 +31,14 @@
         >
           <i class="fab fa-github fa-lg"></i>
         </a>
+        <a
+          type="button"
+          class="btn btn-secondary btn-lg ml-1"
+          v-if="deploymentLink"
+          :href="deploymentLink"
+        >
+          <i class="fas fa-globe fa-lg"></i>
+        </a>
       </div>
     </div>
     <br />
@@ -39,7 +47,7 @@
 
 <script>
 export default {
-  props: ["title", "githubLink", "summary", "technologies"],
+  props: ["title", "githubLink", "deploymentLink", "summary", "technologies"],
 };
 </script>
 
