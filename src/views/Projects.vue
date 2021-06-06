@@ -26,6 +26,14 @@ export default {
     return {
       projectData: [
         {
+          title: "Block Paper Scissors",
+          summary: [
+            "Web3 implementation of the classic game Rock Paper Scissors, including ethereum smart contracts and vue frontend",
+          ],
+          technologies: ["Ethereum (solidity, web3.js, truffle)", "Javascript (Vue.js)", "HTML", "CSS (Bootstrap)"],
+          githubLink: "https://github.com/ckoopmann/BlockPaperScissors",
+        },
+        {
           title: "Personal Website",
           summary: [
             "Implementation of this website using the Vue.js framework.",
