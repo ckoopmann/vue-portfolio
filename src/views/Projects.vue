@@ -26,6 +26,21 @@ export default {
     return {
       projectData: [
         {
+          title: "Wicked Financial",
+          summary: [
+            "Decentralized Finance app implementing leveraged Foreign Exchange Derivatives.",
+            "Done as part of the HackMoney 2021 hackathon winning two sponsor prizes.",
+          ],
+          technologies: [
+            "Ethereum (solidity, ethers.js, hardhat)",
+            "Javascript (Vue.js)",
+            "HTML",
+            "CSS (Bootstrap)",
+          ],
+          githubLink: "https://github.com/WickedFinancial/Wicked",
+          deploymentLink: "https://wicked.financial",
+        },
+        {
           title: "Block Paper Scissors",
           summary: [
             "Web3 implementation of the classic game Rock Paper Scissors, including ethereum smart contracts and vue frontend",
